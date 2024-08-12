@@ -40,7 +40,13 @@ h1,h2,h3,h4,h5,h6{
 }
 a{
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+iframe{
+  width: 450px; 
+  height: 300px; 
+  border: solid 3px var(--cor--terciaria);
 }
 
 .navbar-brand > img{
@@ -66,21 +72,17 @@ main{
 section.module p{
   margin-bottom: 40px;
 }
-
 section.module:last-child{
   margin-bottom: 0;
 }
-
 section.module h2{
   margin-bottom: 40px;
   font-size: 30px;
 }
-
 section.module.content{
  padding: 40px 0;
  background: var(--cor--secundaria); 
 }
-
 section.module.parallax{
   display: flex;
   flex-direction: column;
@@ -97,7 +99,6 @@ section.module.parallax{
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-
 section.module.parallax:after{
   content: "";
   height: 100%;
@@ -108,12 +109,9 @@ section.module.parallax:after{
   background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, var(--cor--principal) 100% );
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, var(--cor--principal) 100% );
 }
-
-
 section.module.parallax-1, section.module.parallax-2, section.module.parallax-3{
   background-image: url("../img/DSC03455.jpg");
 }
-
 section.module.parallax h1{
   color: var(--cor--secundaria);
   text-align: center;
@@ -121,20 +119,43 @@ section.module.parallax h1{
   z-index: 50;
   text-transform: uppercase;
 }
+
 .imagem-logo:hover {
   transform: scale(1.05);
 }
+
 .inner{
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 20%;
 }
+
 .item-contato{
   display: flex;
   flex-direction: row;
   gap: 20px;
   justify-content: space-between;
+}
+
+.member{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+img {
+  align-items: center;
+  max-width: 100px;
+  border: solid 3px var(--cor--terciaria);
+}
+h5 {
+  align-items: center;
+  text-align: center;
+}
+p {
+  text-align: justify;
+}
 }
 
 .item{

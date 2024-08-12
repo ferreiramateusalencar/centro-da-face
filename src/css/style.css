@@ -111,7 +111,7 @@ section.module.parallax:after{
 
 
 section.module.parallax-1, section.module.parallax-2, section.module.parallax-3{
-  background-image: url("src/img/DSC03455.jpg");
+  background-image: url("../img/DSC03455.jpg");
 }
 
 section.module.parallax h1{

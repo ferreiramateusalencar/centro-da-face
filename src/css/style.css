@@ -143,19 +143,17 @@ section.module.parallax h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
 
-img {
+.member > img {
   align-items: center;
   max-width: 100px;
   border: solid 3px var(--cor--terciaria);
 }
-h5 {
-  align-items: center;
-  text-align: center;
-}
-p {
+
+.member > p {
   text-align: justify;
-}
 }
 
 .item{
